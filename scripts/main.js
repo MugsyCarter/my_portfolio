@@ -24,15 +24,35 @@ function closeBar(){
   });
 };
 
-//this function displays the menu when you click on the 'hamburger'
-
-function openMenu(){
-  $('.icon-menu').on('click', function(){
-    alert('button!');
-    $('.body').show();
+function openGallery(){
+  $('.body').on('click', function(){
+    $(this).slideUp('slow');
+    $('.gallery').css('height', '80vh');
+    $('div').not('.gallery').css('height', '5vh');
+    $('.gallery').slideDown('slow');
   });
 };
 
+function closeGallery(){
+  $('.gallery').on('click', function(){
+    $(this).slideUp('slow');
+    $('.body').slideDown('slow');
+    $('div').css('height', '23vh');
+
+  });
+};
+
+
+//this function displays the menu when you click on the 'hamburger'
+
+// function openMenu(){
+//   $('.icon-menu').on('click', function(){
+//     alert('button!');
+//     $('.body').show();
+//   });
+// };
+openGallery();
+closeGallery();
 openBar();
 closeBar();
-openMenu();
+// openMenu();
