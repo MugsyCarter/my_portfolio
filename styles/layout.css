@@ -34,7 +34,7 @@
 img{
   max-height: 10vh;
   width: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   float: left;
   margin: 1vh;
 }
