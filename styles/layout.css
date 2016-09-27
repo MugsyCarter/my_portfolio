@@ -1,0 +1,48 @@
+/*Layout: classes, ids(sometimes), header, footer */
+.title {
+  text-align: center;
+  padding-top: 0.2em;
+
+}
+
+.head{
+  float: left;
+}
+
+.body, .gallery{
+  background-color: #B22222;
+   float: right;
+}
+
+.about, .about-me{
+  background-color: #6EC5E9;
+  float: left;
+}
+
+.foot, .contact{
+  float: right;
+}
+
+.foot, .contact, ul, li{
+  background-color:#7B4A12;
+}
+
+[class^="icon-"]{
+    line-height: 5vh;
+}
+
+img{
+  max-height: 10vh;
+  width: auto;
+  border-radius: 50%;
+  float: left;
+  margin: 1vh;
+}
+
+p{
+  font-size: 2vh;
+  margin: 2vh;
+  padding-top: 2em;
+  display: inline;
+  text-decoration: none;
+}

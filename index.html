@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/styles/fonts/icomoon.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/modules.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="gallery-template" type="text/x-handlebars-template">
+<!-- entered handlebars info here.  Will attach to the 'gallery' div -->
+      <!-- <div class="galleryItem">
+        {{title}}
+        <br>
+        {{url}}
+        <br>
+        {{image}}
+        <br>
+        <p>{{caption}}</p>
+      </div>
+    </script> -->
+
+
+    <title>Mugsy Carter: Web Developer Home Page</title>
+  </head>
+  <body>
+    <div class= "head">
+      <h1 class = 'title'>Mugsy Carter</h1>
+    </div>
+    <div class = "gallery" data-vis="invis" id="portfolio-gallery">Gallery stuff here </div>
+    <div class= "body" data-vis="vis"><h1>Web Apps</h1></div>
+    <div class = "about-me" data-vis="invis">
+      <img src= "images/mugsy_chichen.jpg" id="mugsy"></img>
+      <p>I started studying javascript and web-development in the spring of 2016, and I quickly came to love attacking new programming challenges.  Formerly I worked as a high-school science teacher and a research and development scientist at a drug company.</p>
+    </div>
+    <div class = "about" data-vis="vis"><h1>About</h1></div>
+    <div class = "contact" data-vis="invis">
+      <ul>
+        <li><a href="https://github.com/MugsyCarter" class="icon-github">GitHub account</a></li>
+        <li><a href="https://www.linkedin.com/in/mugsy-carter-063504100" class = "icon-linkedin">  linkedIn page</a></li>
+        <li><a href="https://www.youtube.com/channel/UCxlSyrB53oVjYZNE2pALxgQ" class ="icon-youtube">  youtube channel</a></li>
+        <li><a href="mailto:mugsycarter@gmail.com" class ="icon-mail">  email Mugsy @mugsycarter@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class = "foot" data-vis="vis"><h1>Contact</h1></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="vendor/scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/portfolioObjects.js"></script>
+    <script src="scripts/objectSorter.js"></script>
+  </body>
+</html>
