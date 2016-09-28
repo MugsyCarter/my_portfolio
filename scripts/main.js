@@ -28,8 +28,9 @@ function openGallery(){
   $('.body').on('click', function(){
     $(this).slideUp('slow');
     $('.gallery').css('height', '80vh');
-    $('div').not('.gallery').css('height', '5vh');
+    $('div').not('.gallery, .site-holder').css('height', '5vh');
     $('.gallery').slideDown('slow');
+    $('.site-holder').show();
   });
 };
 
