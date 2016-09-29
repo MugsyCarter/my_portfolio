@@ -29,23 +29,24 @@
     <div class= "head">
       <h1 class = 'title'>Mugsy Carter</h1>
     </div>
-    <div class = "gallery">Gallery here.
+    <div class = "gallery" data-vis="invis"><button type="button" class="close-gallery">Close Gallery</button>
       <section id="sites">
           <article class="template" data-category="cat">
           <div class = "site-holder">
           <header>
-            <h1 id="site-title">Title</h1>
-              URL <address><a href=""> url here</a></address>
-              <img id="site-image" src=""></img>
-              published <time pubdate datetime="2000-01-01"></time>
+            <h2 id="site-title">Title</h2>
+              <address><a href="" class="websiteURL"> url here</a></address>
+              <button type="button" class="more-button">Show More</button>
+              <img id="site-image" src="" data-more="less"></img>
+              <time pubdate datetime="2000-01-01" data-more="less"></time>
           </header>
-          <section class="site-caption"></section>
+          <section class="site-caption" data-more="less"></section>
 
         </div>
     </article>
       </section>
     </div>
-    <div class= "body" ><h1>Web Apps</h1></div>
+    <div class= "body" data-vis="vis"><h1>Web Apps</h1></div>
     <div class = "about-me" data-vis="invis">
       <img src= "images/mugsy_chichen.jpg" id="mugsy"></img>
       <p>I started studying javascript and web-development in the spring of 2016, and I quickly came to love attacking new programming challenges.  Formerly I worked as a high-school science teacher and a research and development scientist at a drug company.</p>

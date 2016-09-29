@@ -11,7 +11,6 @@ function Site (obj){
 Site.prototype.toHtml = function() {
   var $newSite = $('article.template').clone();
   $newSite.attr('data-category', this.category);
-
   $newSite.find('#site-title').html(this.title);
   $newSite.find('address a').attr('href', this.url);
   $newSite.find('#site-image').attr('src', this.imageURL);

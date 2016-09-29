@@ -32,7 +32,7 @@
 }
 
 .site-holder {
-  height: 20vh;
+  min-height: 10vh;
   white-space: pre-line;
 
 }
@@ -44,6 +44,17 @@
 
 #site-image{
 display: inline;
+}
+
+.websiteURL{
+  font-size: 1vh;
+  margin: 0vh;
+  padding: 0vh;
+}
+
+button{
+  background-color:#7B4A12;
+  border-radius:1vh;
 }
 
 header{
