@@ -2,7 +2,9 @@
 //on page load the elements with the 'vis' attribute are made visible
 $(document).ready(function(){
   $('[data-more="less"]').hide();
+  //the above line is currently not doing anything
   $('div:not(".head")').slideUp();
+  //the above line is the one that is hiding my gallery items
   $('.body').delay(300).slideDown('slow');
   $('.about').delay(500).slideDown('slow');
   $('.foot').delay(600).slideDown('slow');
@@ -32,16 +34,11 @@ function closeBar(){
 
 function openGallery(){
   $('.body').on('click', function(){
-    $(this).slideUp('fast');
+    $('.body').slideUp('fast');
     $('.gallery').css('min-height', '80vh');
-    $('div').not('.gallery, .site-holder').css('min-height', '5vh');
-    // $('.gallery').slideDown('fast');
-    $('.gallery').show();
-    $('.site-holder').slidedown();
-    $('.site-holder').show();
-    $('article.template').show();
-    $('.gallery-item').slideDown();
-    $('article.template').hide();
+    $('div').not('.gallery, .site-holder, .gallery-item').css('min-height', '5vh');
+    $('.gallery').slideDown('fast');
+    $('.gallery-item').delay(300).slideDown('fast');
   });
 };
 
