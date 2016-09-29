@@ -31,9 +31,10 @@
     line-height: 5vh;
 }
 
-.site-holder {
+.gallery-item {
   min-height: 10vh;
   white-space: pre-line;
+  width: 50%;
 
 }
 #site-title{
@@ -42,8 +43,12 @@
   padding: 0vh;
 }
 
-#site-image{
+.site-image{
 display: inline;
+min-height: 10vh;
+width: auto;
+border-radius: 10%;
+margin: 1vh;
 }
 
 .websiteURL{
