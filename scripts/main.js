@@ -16,7 +16,6 @@ function openBar(){
   $('div[data-vis="vis"]').on('click', function(){
     $(this).slideUp('fast');
     $(this).prev().slideDown('fast');
-
   });
 };
 

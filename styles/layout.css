@@ -38,31 +38,35 @@
 }
 
 .image-link{
-font-size: 2vh;
+font-size: 4vh;
 margin: 2vh;
-padding-top: 2em;
+padding-top: 0vh;
 display: inline;
 background-color:#003A6F;
 text-decoration:none;
 }
 
-#site-title{
-  display: inline;
-  margin: 0vh;
-  padding: 0vh;
-}
+
 
 .site-image{
 display: inline;
-min-height: 10vh;
+float: right;
+min-height: 20vh;
 width: auto;
 border-radius: 10%;
 margin: 1vh;
 }
 
+.site-title{
+  padding-top: 0vh;
+  margin-top: 0vh;
+  font-size: 4vh;
+  float: left;
+}
 
 button{
-  background-color:#7B4A12;
+  background-color:white;
+  color: #B22222;
   width: 24vh;
   height: 10vh;
   border-radius:6vh;
