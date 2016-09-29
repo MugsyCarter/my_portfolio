@@ -6,7 +6,7 @@
 }
 
 div {
-  height: 23vh;
+  min-height: 23vh;
   width: 95%;
   margin: 0.2em;
   background-color: #003A6F;
