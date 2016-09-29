@@ -1,6 +1,8 @@
 
 
-
+a, .contact, .foot, .about, .about-me, .body, button{
+       cursor: pointer;
+}
 
 
 
@@ -27,6 +29,14 @@
   }
   img{
     max-height: 18vh;
+  }
+
+  .gallery-item {
+    width: 60vw;
+  }
+
+  button{
+    height: 6vh;
   }
 
   }

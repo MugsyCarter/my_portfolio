@@ -34,9 +34,18 @@
 .gallery-item {
   min-height: 10vh;
   white-space: pre-line;
-  width: 50%;
-
+  width: 80vw;
 }
+
+.image-link{
+font-size: 2vh;
+margin: 2vh;
+padding-top: 2em;
+display: inline;
+background-color:#003A6F;
+text-decoration:none;
+}
+
 #site-title{
   display: inline;
   margin: 0vh;
@@ -51,15 +60,13 @@ border-radius: 10%;
 margin: 1vh;
 }
 
-.websiteURL{
-  font-size: 1vh;
-  margin: 0vh;
-  padding: 0vh;
-}
 
 button{
   background-color:#7B4A12;
-  border-radius:1vh;
+  width: 24vh;
+  height: 10vh;
+  border-radius:6vh;
+  margin: 1vh;
 }
 
 header{
