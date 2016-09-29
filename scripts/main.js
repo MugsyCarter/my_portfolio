@@ -1,21 +1,17 @@
 'use strict';
 //on page load the elements with the 'vis' attribute are made visible
 $(document).ready(function(){
-  $('[data-more="less"]').hide();
-  //the above line is currently not doing anything
+  // $('[data-more="less"]').hide();
+  //the above line is currently not doing anything, I may un-comment it if I want to addd "show more" functionality
   $('div:not(".head")').slideUp();
-  //the above line is the one that is hiding my gallery items
   $('.body').delay(300).slideDown('slow');
   $('.about').delay(500).slideDown('slow');
   $('.foot').delay(600).slideDown('slow');
 });
 
-//Something in this JS file is hiding my gallery items so I can't get them background-color
 
 
-
-
-  //This function displays the hidden content when clicked
+  //This function displays the hidden content in the about and contact bars when clicked
 function openBar(){
   $('div[data-vis="vis"]').on('click', function(){
     $(this).slideUp('fast');
@@ -24,7 +20,7 @@ function openBar(){
   });
 };
 
-//This function displays the original categry again when clicked
+//This function displays the original category again when clicked
 function closeBar(){
   $('div[data-vis="invis"]').not('.gallery').on('click', function(){
     $(this).slideUp('fast');
@@ -32,6 +28,7 @@ function closeBar(){
   });
 };
 
+//this funciton opens and shows the Web Apps gallery
 function openGallery(){
   $('.body').on('click', function(){
     $('.body').slideUp('fast');
@@ -42,8 +39,10 @@ function openGallery(){
   });
 };
 
+//this function closes the Web Apps gallery
 function closeGallery(){
   $('.close-gallery').on('click', function(){
+    $('.gallery-item').slideUp('fast');
     $('.gallery').slideUp('fast');
     $('.body').slideDown('fast');
     $('div').css('height', '23vh');
@@ -51,16 +50,16 @@ function closeGallery(){
   });
 };
 
-
-function showMore(){
-  $('.more-button').on('click', function(){
-    $('[data-more="less"]').show();
-  });
-};
+//this button would add show more/show less functionality
+// function showMore(){
+//   $('.more-button').on('click', function(){
+//     $('[data-more="less"]').show();
+//   });
+// };
 
 
 openGallery();
 closeGallery();
 openBar();
 closeBar();
-showMore();
+// showMore();
