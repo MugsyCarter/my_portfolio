@@ -9,19 +9,6 @@
     <link rel="stylesheet" type="text/css" href="styles/modules.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script id="gallery-template" type="text/x-handlebars-template">
-<!-- entered handlebars info here.  Will attach to the 'gallery' div -->
-      <!-- <div class="galleryItem">
-        {{title}}
-        <br>
-        {{url}}
-        <br>
-        {{image}}
-        <br>
-        <p>{{caption}}</p>
-      </div>
-    </script> -->
-
 
     <title>Mugsy Carter: Web Developer Home Page</title>
   </head>
@@ -31,19 +18,19 @@
     </div>
     <div class = "gallery" data-vis="invis"><button type="button" class="close-gallery">Close Gallery</button>
       <section id="sites">
-          <article class="template" data-category="cat">
-          <div class = "site-holder">
-          <header>
-            <h2 id="site-title">Title</h2>
-              <address><a href="" class="websiteURL"> url here</a></address>
-              <button type="button" class="more-button">Show More</button>
-              <img id="site-image" src="" data-more="less"></img>
-              <time pubdate datetime="2000-01-01" data-more="less"></time>
-          </header>
-          <section class="site-caption" data-more="less"></section>
-
-        </div>
-    </article>
+        <article class="template" data-category="cat">
+          <script id="gallery-template" type="text/x-handlebars-template">
+            <div class="galleryItem">
+              {{title}}
+              <br>
+              {{imageURL}}
+              <br>
+              {{url}}
+              <br>
+              <p>{{caption}}</p>
+            </div>
+          </script>
+        </article>
       </section>
     </div>
     <div class= "body" data-vis="vis"><h1>Web Apps</h1></div>
@@ -63,8 +50,8 @@
     <div class = "foot" data-vis="vis"><h1>Contact</h1></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="vendor/scripts/jquery-3.1.0.min.js"></script>
-    <script src="scripts/main.js"></script>
     <script src="scripts/portfolioObjects.js"></script>
-    <script src="scripts/objectSorter.js"></script>
+    <script src="scripts/siteSorter.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -8,6 +8,10 @@ $(document).ready(function(){
   $('.foot').delay(600).slideDown('slow');
 });
 
+//Something in this JS file is hiding my gallery items so I can't get them background-color
+
+
+
 
   //This function displays the hidden content when clicked
 function openBar(){
@@ -31,8 +35,12 @@ function openGallery(){
     $(this).slideUp('fast');
     $('.gallery').css('min-height', '80vh');
     $('div').not('.gallery, .site-holder').css('min-height', '5vh');
-    $('.gallery').slideDown('fast');
+    // $('.gallery').slideDown('fast');
+    $('.gallery').show();
+    $('.site-holder').slidedown();
     $('.site-holder').show();
+    $('article.template').show();
+    $('.gallery-item').slideDown();
     $('article.template').hide();
   });
 };
