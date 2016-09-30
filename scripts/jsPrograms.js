@@ -24,7 +24,6 @@ function primesSum(){
           }
         }
     }
-console.log(primes);
 
 var sum = primes.reduce(function(tot, num) {
   return tot + num;

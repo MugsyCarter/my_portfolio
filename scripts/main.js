@@ -69,14 +69,15 @@ function closeProgramPage(){
   });
 };
 
-
+function runPrimesSum(){
+    $('#primes').on('click', PrimesSum());
 //this button would add show more/show less functionality
 // function showMore(){
 //   $('.more-button').on('click', function(){
 //     $('[data-more="less"]').show();
 //   });
 // };
-
+runPrimesSum();
 openProgramPage();
 closeProgramPage();
 openGallery();
