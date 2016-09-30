@@ -23,14 +23,41 @@
   float: right;
 }
 
+.programs, .programs-page{
+  background-color: #000020;
+  min height: 14vh;
+}
+
+.programs-page{
+  font-size: 6vh;
+}
 .foot, .contact, ul, li{
   background-color:#7B4A12;
+}
+
+.jsProgram{
+  background-color: #E0E0E0;
+  color: #000020;
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 8vh;
+}
+
+#primes{
+  float: right;
 }
 
 [class^="icon-"]{
     line-height: 5vh;
 }
 
+.icon-home3{
+  height: 8vh;
+  width: 8vh;
+  border-radius: 0%;
+  color: white;
+  background-color: #000020;
+}
 .gallery-item {
   min-height: 10vh;
   white-space: pre-line;
@@ -38,7 +65,7 @@
 }
 
 .image-link{
-font-size: 4vh;
+font-size: 3vh;
 margin: 2vh;
 padding-top: 0vh;
 display: inline;
@@ -90,8 +117,8 @@ img{
 
 p{
   font-size: 2vh;
-  margin: 2vh;
-  padding-top: 2em;
+  margin: 1vh;
+  padding-top: 1vh;
   display: inline;
   text-decoration: none;
 }

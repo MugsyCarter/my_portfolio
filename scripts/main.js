@@ -3,10 +3,11 @@
 $(document).ready(function(){
   // $('[data-more="less"]').hide();
   //the above line is currently not doing anything, I may un-comment it if I want to addd "show more" functionality
-  $('div:not(".head")').slideUp();
+  $('div:not(".head")').hide();
   $('.body').delay(300).slideDown('slow');
   $('.about').delay(500).slideDown('slow');
   $('.foot').delay(600).slideDown('slow');
+  $('.programs').delay(650).slideDown('slow');
 });
 
 
@@ -45,9 +46,29 @@ function closeGallery(){
     $('.gallery').slideUp('fast');
     $('.body').slideDown('fast');
     $('div').css('height', '23vh');
-
   });
 };
+
+//this funciton opens the Programs Page to fill the screen
+function openProgramPage(){
+  $('.programs').on('click', function(){
+    $('div').slideUp('fast');
+    $('.programs-page').slideDown().animate({height: '100vh', width: '100vw'}, 1000);
+    $('.jsProgram').show().animate({height: '20vh', width: '90vw'}, 1000);
+  });
+};
+
+function closeProgramPage(){
+  $('.icon-home3').on('click', function(){
+    $('div:not(".programs")').hide();
+    $('.head').delay(100).slideDown('slow');
+    $('.body').delay(300).slideDown('slow');
+    $('.about').delay(500).slideDown('slow');
+    $('.foot').delay(600).slideDown('slow');
+    $('.programs').delay(650).slideDown('slow');
+  });
+};
+
 
 //this button would add show more/show less functionality
 // function showMore(){
@@ -56,7 +77,8 @@ function closeGallery(){
 //   });
 // };
 
-
+openProgramPage();
+closeProgramPage();
 openGallery();
 closeGallery();
 openBar();
