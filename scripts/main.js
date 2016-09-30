@@ -22,7 +22,7 @@ function openBar(){
 
 //This function displays the original category again when clicked
 function closeBar(){
-  $('div[data-vis="invis"]').not('.gallery').on('click', function(){
+  $('div[data-vis="invis"]').not('.gallery, .programs-page').on('click', function(){
     $(this).slideUp('fast');
     $(this).next().slideDown('fast');
   });
@@ -57,7 +57,7 @@ function openProgramPage(){
     $('.jsProgram').show().animate({height: '20vh', width: '90vw'}, 1000);
   });
 };
-
+//close the programs page and return to the home menu
 function closeProgramPage(){
   $('.icon-home3').on('click', function(){
     $('div:not(".programs")').hide();
@@ -69,15 +69,16 @@ function closeProgramPage(){
   });
 };
 
-function runPrimesSum(){
-    $('#primes').on('click', PrimesSum());
+
+
+
 //this button would add show more/show less functionality
 // function showMore(){
 //   $('.more-button').on('click', function(){
 //     $('[data-more="less"]').show();
 //   });
 // };
-runPrimesSum();
+
 openProgramPage();
 closeProgramPage();
 openGallery();
