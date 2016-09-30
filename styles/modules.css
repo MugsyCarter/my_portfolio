@@ -18,10 +18,10 @@ a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram
 
   li, a{
     background-color:#7B4A12;
-    font-size: 6vh;
-    display: inline-block;
+    font-size: 4vh;
+    display: inline;
     padding: 0.1vh;
-    padding-left: 3vh;
+    padding-left: 1vh;
   }
 
   p{
