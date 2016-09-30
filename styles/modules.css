@@ -1,6 +1,6 @@
 
 
-a, .image-link, .contact, .foot, .about, .about-me, .body, button{
+a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram, button{
        cursor: pointer;
 }
 

@@ -1,5 +1,6 @@
+//IIFE here
+(function(window){
 
-function getData(){
   //array containing the finalized sites
   var finalSites = [];
 
@@ -38,11 +39,11 @@ function getData(){
       $('#sites').append(x.toHtml());
     });
   };
-//on fail
+//on fail log primary and secondary error messages
   function errorHandler(error, second){
     console.log('ERROR', error);
     console.log('here it is :' + second);
   };
-};
 
-getData();
+
+}(window));
