@@ -2,7 +2,7 @@
 (function(module){
 
   //array containing the finalized sites
-  var finalSites = [];
+  Site.all = [];
 
   //Site object costructor for the gallery items
   function Site (obj){
@@ -32,10 +32,10 @@
     localStorage.setItem('portfolioSites', data);
     //convert each site to a Site object w inherited attributes
     data.forEach(function(ele){
-      finalSites.push(new Site(ele));
+      Site.all.push(new Site(ele));
     });
     //appends the info from sites to the #sites section of index.html
-    finalSites.forEach(function(x) {
+    Site.all.forEach(function(x) {
       $('#sites').append(x.toHtml());
     });
   };
@@ -45,5 +45,5 @@
     console.log('here it is :' + second);
   };
 
-  module.siteSorter = siteSorter;
+  module.Site = Site;
 }(window));
