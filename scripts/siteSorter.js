@@ -1,5 +1,5 @@
 //IIFE here
-(function(window){
+(function(module){
 
   //array containing the finalized sites
   var finalSites = [];
@@ -45,5 +45,5 @@
     console.log('here it is :' + second);
   };
 
-
+  module.siteSorter = siteSorter;
 }(window));
