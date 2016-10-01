@@ -1,6 +1,6 @@
 
 
-a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram, button{
+a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram, .head, .picture, button{
        cursor: pointer;
 }
 
@@ -21,7 +21,8 @@ a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram
     font-size: 4vh;
     display: inline;
     padding: 0.1vh;
-    padding-left: 1vh;
+    padding-left: 5vh;
+    text-decoration: none;
   }
 
   p{
