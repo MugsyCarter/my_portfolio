@@ -15,6 +15,10 @@
    float: right;
 }
 
+.gallery, .about-me, .programs-page, .contact{
+  min-height: 78vh;
+}
+
 .about, .about-me{
   background-color: #6EC5E9;
   float: left;
@@ -75,7 +79,9 @@ background-color:#003A6F;
 text-decoration:none;
 }
 
-
+.picture{
+  background-color: white;
+}
 
 .site-image{
 display: inline;
@@ -98,13 +104,19 @@ ul{
   padding: 6vh 0em;
 }
 
-button{
+.icon-home3{
   background-color:white;
   color: #B22222;
-  width: 24vh;
-  height: 10vh;
-  border-radius:6vh;
+  height: 8vh;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 10vh;
+  border-radius: 100%;
   margin: 1vh;
+  padding: 1vh;
+}
+.page-link {
+  display: block;
 }
 
 header{
@@ -123,10 +135,10 @@ img{
 }
 
 #sahale{
-  width: 70vw;
-  height: auto;
-  margin-left: 12vw;
-  border-radius:0%;
+max-height: 18vh;
+min-width: 90vh;
+float: right;
+border-radius:0%;
 }
 
 p{

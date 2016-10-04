@@ -1,6 +1,6 @@
 
 
-a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram, .head, .picture, button{
+a, .image-link {
        cursor: pointer;
 }
 
@@ -25,6 +25,14 @@ a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram
     text-decoration: none;
   }
 
+  .page-link {
+    background-color: black;
+    font-size: 0vh;
+    display: inline;
+    padding: 0vh;
+    text-decoration: none;
+  }
+
   p{
     font-size: 4vh;
   }
@@ -36,8 +44,10 @@ a, .image-link, .contact, .foot, .about, .about-me, .body, .programs, .jsProgram
     width: 60vw;
   }
 
-  button{
-    height: 6vh;
+  #sahale{
+    min-width: 55vw;
+    float: left;
+    height: 18vh;
   }
 
   }

@@ -18,9 +18,9 @@
       <img src= "images/mugsy_sahale.jpg" id="sahale">
     </div>
     <div class= "head" data-vis="vis">
-      <h1 class = 'title'>Mugsy Carter</h1>
+      <h1 class = 'title'>Mugsy Carter</h1><a class="icon-home3" href="/"></a>
     </div>
-    <div class = "gallery"><button type="button" class="close-gallery">Close Gallery</button>
+    <div class = "gallery">
       <section id="sites">
         <article class="template" data-category="cat">
           <script id="gallery-template" type="text/x-handlebars-template">
@@ -34,12 +34,12 @@
         </article>
       </section>
     </div>
-    <div class= "body"><h1>Web Apps</h1></div>
+    <a class="page-link" href="gallery"><div class= "body"><h1>Web Apps</h1></div></a>
     <div class = "about-me" data-vis="invis">
       <img src= "images/mugsy_chichen.jpg" id="mugsy"></img>
       <p>I started studying javascript and web-development in the spring of 2016, and I quickly came to love attacking new programming challenges.  Formerly I worked as a high-school science teacher and a research and development scientist at a drug company.</p>
     </div>
-    <div class = "about" data-vis="vis"><h1>About</h1></div>
+    <a class="page-link" href="about"><div class = "about" data-vis="vis"><h1>About</h1></div></a>
     <div class = "contact" data-vis="invis">
       <ul>
         <li><a href="https://github.com/MugsyCarter" class="icon-github"> GitHub</a></li>
@@ -48,24 +48,25 @@
         <li><a href="mailto:mugsycarter@gmail.com" class ="icon-mail"> email Mugsy</a></li>
       </ul>
     </div>
-    <div class = "foot" data-vis="vis"><h1>Contact</h1></div>
+    <a class="page-link" href="contact"><div class = "foot" data-vis="vis"><h1>Contact</h1></div></a>
     <div class = "programs-page" data-vis="invis">Javascript Programs<br>
-      <button type="button" class="icon-home3"></button><br>
       <div class= "jsProgram" id = "combustion">Combustion Reaction Calculator</div>
       <div class= "jsProgram" id = "primes">Sum of Primes</div>
       <div class= "jsProgram" id = ""></div>
-
-
-
-
-
-
     </div>
-    <div class = "programs"data-vis="vis"><h1>Javascript Programs</h1></div>
+    <a class="page-link" href="programs"><div class = "programs"data-vis="vis"><h1>Javascript Programs</h1></div></a>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="vendor/scripts/jquery-3.1.0.min.js"></script>
-    <script src="scripts/jsPrograms.js"></script>
-    <script src="scripts/siteSorter.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/view/jsPrograms.js"></script>
+    <script src="scripts/view/site.js"></script>
+    <script src="/scripts/controller/aboutController.js"></script>
+    <script src="/scripts/controller/galleryController.js"></script>
+    <script src="/scripts/controller/contactController.js"></script>
+    <script src="/scripts/controller/jsProgramsController.js"></script>
+    <script src="/scripts/controller/homeController.js"></script>
+    <script src="/scripts/controller/routes.js"></script>
+    <script src="scripts/view/events.js"></script>
+    </script>
   </body>
 </html>
