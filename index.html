@@ -25,10 +25,11 @@
         <article class="template" data-category="cat">
           <script id="gallery-template" type="text/x-handlebars-template">
             <div class="gallery-item">
-              <h2 class = "site-title">{{title}}</h2>
+              <h2 class = "site-title">{{name}}</h2>
               <img src ="{{imageURL}}" class="site-image">
-              <a href ="{{url}}" class="image-link">{{url}}</a>
-              <p>{{caption}}</p>
+              <a href ="{{url}}" class="image-link">Link: {{url}}</a>
+              <p>{{description}}</p>
+              <p>Created: {{created_at}}</p>
             </div>
           </script>
         </article>
@@ -57,16 +58,18 @@
     <a class="page-link" href="programs"><div class = "programs"data-vis="vis"><h1>Javascript Programs</h1></div></a>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-    <script src="vendor/scripts/jquery-3.1.0.min.js"></script>
-    <script src="scripts/view/jsPrograms.js"></script>
-    <script src="scripts/view/site.js"></script>
+    <script src="/vendor/scripts/jquery-3.1.0.min.js"></script>
+    <script src="/scripts/model/githubToken.js"></script>
+    <script src="/scripts/view/jsPrograms.js"></script>
     <script src="/scripts/controller/aboutController.js"></script>
     <script src="/scripts/controller/galleryController.js"></script>
     <script src="/scripts/controller/contactController.js"></script>
     <script src="/scripts/controller/jsProgramsController.js"></script>
     <script src="/scripts/controller/homeController.js"></script>
     <script src="/scripts/controller/routes.js"></script>
-    <script src="scripts/view/events.js"></script>
+    <script src="/scripts/model/galleryData.js"></script>
+    <script src="/scripts/view/galleryView.js"></script>
+    <script src="/scripts/view/events.js"></script>
     </script>
   </body>
 </html>
