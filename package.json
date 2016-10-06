@@ -1,22 +1,25 @@
 {
   "name": "my_portfolio",
   "version": "1.0.0",
-  "description": "\"my portfolio server\"",
-  "main": "index.js",
+  "description": "My protfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-request-proxy": "^2.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MugsyCarter/my_portfolio.git"
+    "url": "git+https://github.com/MugsyCarter/repos.git"
   },
-  "author": "",
+  "author": "Mugsy Carter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MugsyCarter/my_portfolio/issues"
+    "url": "https://github.com/MugsyCarter/repos/issues"
   },
-  "homepage": "https://github.com/MugsyCarter/my_portfolio#readme",
-  "dependencies": {
-    "express": "^4.14.0"
-  }
+  "homepage": "https://github.com/MugsyCarter/my_portfolio#readme"
 }
