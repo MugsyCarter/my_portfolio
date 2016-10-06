@@ -1,24 +1,24 @@
 {
-  "name": "blog-app",
+  "name": "my_portfolio",
   "version": "1.0.0",
-  "description": "MVC for the win",
+  "description": "portfolio for mugsy carter",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "rick@codefellows.com",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.13.3",
-    "express-request-proxy": "^2.0.0"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MugsyCarter/13-production-deployment.git"
+    "url": "git+https://github.com/MugsyCarter/my_portfolio.git"
   },
+  "author": "Mugsy Carter",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MugsyCarter/13-production-deployment/issues"
+    "url": "https://github.com/MugsyCarter/my_portfolio/issues"
   },
-  "homepage": "https://github.com/MugsyCarter/13-production-deployment#readme"
+  "homepage": "https://github.com/MugsyCarter/my_portfolio#readme"
 }
