@@ -4,6 +4,7 @@ $(document).ready(function(){
   // $('[data-more="less"]').hide();
   //the above line is currently not doing anything, I may un-comment it if I want to addd "show more" functionality
   $('div:not(".head")').hide();
+  $('.icon-home3').fadeOut();
   $('.body').delay(300).slideDown('slow');
   $('.about').delay(500).slideDown('slow');
   $('.foot').delay(600).slideDown('slow');
