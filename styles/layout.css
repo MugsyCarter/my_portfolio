@@ -68,6 +68,23 @@
   min-height: 10vh;
   white-space: pre-line;
   width: 80vw;
+  margin: 5vh 20vw 0vh 20vw;
+}
+
+.gallery-item:nth-child(even){
+  float: right;
+}
+
+.gallery-item:nth-child(3n+3){
+  margin: 5vh 30vw 0vh 10vw;
+}
+
+.gallery-item:nth-child(4n+4){
+  margin: 5vh 30vw 0vh 10vw;
+}
+
+.gallery-item:last-child{
+  margin-bottom: 5vh;
 }
 
 .image-link{
