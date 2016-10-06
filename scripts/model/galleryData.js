@@ -9,8 +9,7 @@
   sites.request = function(callback) {
     $.ajax({
       method: 'GET',
-      url: 'https://api.github.com/users/MugsyCarter/repos',
-      headers: { Authorization: 'token ' + token },
+      url: 'https://api.github.com/users/MugsyCarter/repos' + '?per_page=10&sort=updated',
       success: function(data, status, xhr){
         console.log('ajax call was a rousing success:', data);
         sites.allsites = data;
